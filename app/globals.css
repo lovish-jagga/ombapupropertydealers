@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply transition-colors duration-300 bg-brand-lightBg text-slate-800 font-sans antialiased;
+  }
+  
+  html.dark body {
+    @apply bg-[#050B14] text-slate-200;
+  }
+
+  html.dark .bg-white {
+    @apply bg-[#0B121F] border-slate-900/60 shadow-none;
+  }
+
+  html.dark .text-brand-navy {
+    @apply text-white;
+  }
+
+  html.dark .bg-brand-lightBg {
+    @apply bg-[#050B14];
+  }
+  
+  html.dark .border-gray-100 {
+    @apply border-slate-800/80;
+  }
+  
+  html.dark .bg-brand-navy {
+    @apply bg-[#070D18] border border-slate-900;
+  }
+}
